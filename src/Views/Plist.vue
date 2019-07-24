@@ -3,8 +3,10 @@
 </template>
 
 <script>
+  import {Indicator} from 'mint-ui'
     export default {
-        name: "Plist"
+        name: "Plist",
+
     }
 </script>
 

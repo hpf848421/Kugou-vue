@@ -13,6 +13,9 @@ export default new Router({
     {
       path: '/rank',
       components:require('../Views/Rank')
+    },{
+      path: '/rank/info/:id',
+      components: require('../views/RankInfo')
     },
     {
       path: '/plist',

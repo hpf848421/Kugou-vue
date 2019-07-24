@@ -1,6 +1,6 @@
 <template>
-    <div class="auto-view">
-      <div class="audio-panel-control">
+    <div class="auto-view" :class="{'audio_panel_hide':toggleHide}">
+      <div class="audio-panel-control" @click="togglePanel" :class="{'toggleContral':toggleHide}">
 <!--        <mt-spinner type="snake" :size="27"></mt-spinner>-->
       </div>
 
@@ -23,7 +23,17 @@
 
 <script>
     export default {
-        name: "Player"
+        name: "Player",
+      data:function () {
+        return {
+          toggleHide:false
+        }
+      },
+      methods:{
+        togglePanel(){
+            this.toggleHide = !this.toggleHide;
+        }
+      }
     }
 </script>
 

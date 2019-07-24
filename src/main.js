@@ -9,6 +9,8 @@ import 'mint-ui/lib/style.css'
 import './assets/css/neat-min.css'
 import './assets/css/base.css'
 import axios from 'axios'
+import store from './store/Store'
+
 Vue.config.productionTip = false
 Vue.prototype.$http = axios
 Vue.use(mint)
@@ -16,6 +18,7 @@ Vue.use(mint)
 new Vue({
   el: '#app',
   router,
+  store,
   components: { App },
   template: '<App/>'
 })

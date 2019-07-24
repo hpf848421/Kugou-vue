@@ -1,13 +1,13 @@
 <template>
   <div class="newSong-container">
     <mt-swipe :auto="4000">
-      <mt-swipe-item v-for="item in swipeItems">
+      <mt-swipe-item v-for="(item,index) in swipeItems" :key="index">
         <a :href="item.extra.tourl">
            <img :src="item.imgurl" alt="">
         </a>
       </mt-swipe-item>
     </mt-swipe>
-    <mt-cell v-for="cell in cells" :title="cell.filename">
+    <mt-cell v-for="(cell,index) in cells" :title="cell.filename" :key="index">
       <img src="../assets/images/download_icon.png" width="20" height="20">
 <!--      <img slot="icon" src="../assets/images/download_icon.png" width="24" height="24">-->
     </mt-cell>

@@ -1,7 +1,7 @@
 <template>
   <div class="logo-container">
     <div class="head-logo">
-      <a href="#">
+      <a href="/">
         <img src="http://m.kugou.com/v3/static/images/index/logo.png">
       </a>
     </div>

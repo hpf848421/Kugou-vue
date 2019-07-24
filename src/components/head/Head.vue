@@ -3,21 +3,25 @@
     <HeadLogo>
 
     </HeadLogo>
+    <div class="headNav">
+      <HeadNav>
+      </HeadNav>
+      <RankHead></RankHead>
+    </div>
 
-    <HeadNav>
-
-    </HeadNav>
   </div>
 </template>
 
 <script>
   import HeadLogo from './HeadLogo'
   import HeadNav from './HeadNav'
+  import RankHead from './RankHead'
     export default {
         name: "Head",
       components:{
           HeadLogo,
-          HeadNav
+          HeadNav,
+        RankHead
       }
     }
 </script>

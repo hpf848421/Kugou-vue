@@ -64,9 +64,16 @@ a{text-decoration: none !important;}
   position: fixed;
   bottom: 0;
   left: 0;
-  transition: all 0.5s;
+  transition: all .5s;
   -webkit-transition: all .5s;
   width: 100%;
+}
+.audio_panel_hide{
+  bottom: -64px;
+}
+.toggleContral{
+  background: rgba(0,0,0,0.8) url("../images/open_icon.png") no-repeat center !important;
+
 }
 .audio-panel-control{
   background: rgba(0,0,0,0.8) url("../images/close_icon.png") no-repeat center;
@@ -92,4 +99,38 @@ a{text-decoration: none !important;}
   float: left;
   border-radius: 2px;
 
+}
+.player-status{
+  float: left;
+  width: 50%;
+  height: 100%;
+  margin-left: 3%;
+}
+.player-controls{
+  float: right;
+  width: 30%;
+  height: 100%;
+}
+.player-play{
+  background: url("../images/pause_icon.png") no-repeat center;
+  background-size: auto 70%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.player-nextSong{
+  background: url("../images/next_icon.png") no-repeat center;
+  background-size:  auto 70%;
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+/*rank*/
+.rank-container .mint-cell-wrapper{
+  padding: 10px 7px;
+}
+/*rank info*/
+.rank-banner-wrap{
+  height: 40px;
+  width: 100%;
 }
