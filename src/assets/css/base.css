@@ -36,6 +36,7 @@ a{text-decoration: none !important;}
   z-index: 1000;
   border-bottom: 1px solid #e4e4e4;
 }
+
 .container{
   padding: 0 10px;
   width: 100%;
@@ -131,6 +132,133 @@ a{text-decoration: none !important;}
 }
 /*rank info*/
 .rank-banner-wrap{
-  height: 40px;
+  position: relative;
+  height: 200px;
   width: 100%;
+  margin-top: -43px;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.rank-time{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 0 10px;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+  background: -webkit-linear-gradient(bottom,rgba(0,0,0,.6),rgba(0,0,0,0));
+
+}
+.rank-list{
+  padding-left: 10px;
+}
+.rank-list-good{
+  color: white;
+}
+.rankF{
+  position: absolute;
+  left: 0;
+  border-radius: 5px;
+  width: 20px;
+  text-align: center;
+}
+.rank-list-first{
+  background-color: #E80000;
+}
+.rank-list-second{
+  background-color: #FF7200;
+}
+.rank-list-third{
+  background-color: #F8B300;
+}
+.rank-list .mint-cell-wrapper{
+  padding-left: 20px !important;
+}
+/*plist*/
+.plist .mint-cell-wrapper{
+    padding: 10px;
+}
+.plist .mint-cell-text{
+  position: absolute;
+  left: 90px;
+  top: 23px;
+  height: 16px;
+}
+.plist .mint-cell-label{
+  position: absolute;
+  left: 90px;
+  top: 39px;
+  height: 16px;
+}
+.plist .mint-cell-label:before{
+  content: '';
+  display: inline-block;
+  background: url("../images/icon_music.png") no-repeat center;
+  background-size: 100%;
+  width: 12px;
+  height: 12px;
+}
+/*singer*/
+.singerContainer{
+  overflow: hidden;
+  padding: 0 10px;
+}
+.singerContainer .singerGroup{
+  margin: 15px 0;
+  border-radius: 5px;
+  border: 1px solid #e4e4e4;
+  background: #fbfbfb;
+}
+.singerContainer .cell-item{
+  font-size: 16px;
+  padding: 10px 15px;
+  position: relative;
+  border-bottom: 1px solid #e4e4e4
+}
+.singerContainer .cell-item:after{
+  content: '';
+  position: absolute;
+  top:0;
+  right: 10px;
+    background: url("../images/arrow_icon.png") no-repeat center;
+  background-size: 12px;
+  width: 30px;
+  height: 100%;
+}
+/*plist info*/
+.plistinfoContainner{
+  background-color: #e4e4e4;
+}
+.plistinfoContainner .banner-container{
+  height: 250px;
+  margin-top: -43px;
+  background-size: 100% !important;
+  background-position: center !important;
+}
+.plistinfoContainner .info-desp{
+    padding: 10px;
+  text-align: justify;
+  position: relative;
+  font-size: 16px;
+  background-color: white;
+}
+.plistinfoContainner .info-desp p{
+  padding-right: 40px;
+  line-height: 135%;
+}
+.plistinfoContainner .info-desp img{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 24px;
+  height: 24px;
+}
+.info-desp-hidden{
+  height: 1.35em;
+  overflow: hidden;
+}
+.plistinfoContainner .info-list{
+  margin-top: 5px;
 }

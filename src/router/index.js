@@ -8,22 +8,26 @@ export default new Router({
     {
       path: '/NewSongs',
       alias:'/',
-      components:require('../Views/NewSongs')
+      components:require('../views/NewSongs')
     },
     {
       path: '/rank',
-      components:require('../Views/Rank')
+      components:require('../views/Rank')
     },{
       path: '/rank/info/:id',
       components: require('../views/RankInfo')
     },
     {
+      path: '/plist/info/:id',
+      components: require('../views/PlistInfo')
+    },
+    {
       path: '/plist',
-      components:require('../Views/Plist')
+      components:require('../views/Plist')
     },
     {
       path: '/singer',
-      components:require('../Views/Singer')
+      components:require('../views/Singer')
     },
     {
       path:'*',redirect:'/'

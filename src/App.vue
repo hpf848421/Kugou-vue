@@ -2,7 +2,10 @@
   <div id="app">
     <Head/>
     <div class="main">
-      <router-view></router-view>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
+
     </div>
     <DetailPlayer></DetailPlayer>
     <Player></Player>

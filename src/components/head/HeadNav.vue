@@ -14,17 +14,17 @@
         name: "HeadNav",
       data:function () {
         return {
-          selectedNav:'head-nav1'
         }
       },
        computed:{
           selectedNavC:{
             get(){
-              return this.selectedNav;
+
+              return this.$store.getters.navtab;
             },
             set(nav){
               // this.selectedNavC = nav;
-              this.selectedNav = nav;
+              this.$store.commit('setNavtab',nav);
                 const idnex=nav.substr(-1);
                 this.goRouter(Number(idnex));
             }
